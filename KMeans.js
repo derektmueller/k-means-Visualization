@@ -1,6 +1,12 @@
-#!/usr/bin/node 
-var math = require ('mathjs');
+//#!/usr/bin/node 
 
+if (typeof require !== 'undefined') {
+    var math = require ('mathjs');
+    var assert = require ('assert');
+} else {
+    var math = mathjs;
+    var assert = console.assert;
+}
 
 var KMeans = (function () {
 
@@ -81,25 +87,26 @@ return KMeans;
 
 }) ();
 
+if (typeof module !== 'undefined') module.exports = NN;
 
-GLOBAL.test = function () {
-
-    var data = (new Array (20)).join (' ').split (' ').map (function () { 
-        return [Math.random () * 20 - 10, Math.random () * 20 - 10];
-    });
-//        [1, 2],
-//        [3, 4],
-//        [0, 2],
-//        [4, 8],
-//        [10, 12],
-//        [1, 5],
-//    ];
-    var kMeans = new KMeans;
-    kMeans.K = 2;
-    kMeans.data = data;
-    kMeans.run ();
-    console.log ('kMeans = ');
-    console.log (kMeans);
-    
-};
+//GLOBAL.test = function () {
+//
+//    var data = (new Array (20)).join (' ').split (' ').map (function () { 
+//        return [Math.random () * 20 - 10, Math.random () * 20 - 10];
+//    });
+////        [1, 2],
+////        [3, 4],
+////        [0, 2],
+////        [4, 8],
+////        [10, 12],
+////        [1, 5],
+////    ];
+//    var kMeans = new KMeans;
+//    kMeans.K = 2;
+//    kMeans.data = data;
+//    kMeans.run ();
+//    console.log ('kMeans = ');
+//    console.log (kMeans);
+//    
+//};
 
