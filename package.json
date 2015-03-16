@@ -1,0 +1,21 @@
+{
+  "name": "KMeans.js",
+  "version": "1.0.0",
+  "description": "K-means algorithm",
+  "main": "KMeans.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parenparen/KMeans.js"
+  },
+  "author": "Derek Mueller",
+  "bugs": {
+    "url": "https://github.com/parenparen/KMeans.js/issues"
+  },
+  "homepage": "https://github.com/parenparen/KMeans.js",
+  "dependencies": {
+    "mathjs": "^1.3.0"
+  }
+}
