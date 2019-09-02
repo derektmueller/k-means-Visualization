@@ -1,3 +1,2 @@
-
-###http://www.derekmueller.info/kMeansVisualization
+https://derekmueller.info/views/kMeans.html
 
