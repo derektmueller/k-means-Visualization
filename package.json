@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/parenparen/KMeans.js",
   "dependencies": {
-    "mathjs": "^1.3.0"
+    "mathjs": "^6.2.3"
   }
 }
